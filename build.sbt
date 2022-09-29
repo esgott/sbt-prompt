@@ -10,7 +10,7 @@ lazy val root = project
 
     libraryDependencies += {
       val currentSbtVersion = (sbtBinaryVersion in pluginCrossBuild).value
-      Defaults.sbtPluginExtra("com.typesafe.sbt" % "sbt-git" % "0.9.3", currentSbtVersion, scalaBinaryVersion.value)
+      Defaults.sbtPluginExtra("com.github.sbt" % "sbt-git" % "2.0.0", currentSbtVersion, scalaBinaryVersion.value)
     },
 
     libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.7.25",
